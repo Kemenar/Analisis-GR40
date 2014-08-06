@@ -1,7 +1,18 @@
 import time
 
+def OdeN ():
+    i = 0
+    Lista = []
+    while i<10000:
+        Lista = Lista + [i]
+        i = i + 1
+    BubbleSort (Lista)
+    SelectionSort (Lista)
+        
+        
+
 def BubbleSort (Lista):
-    x = int(time.strftime("%M"))
+    x = int(time.strftime("%S"))
     LenList = len(Lista)
     for i in range (LenList):
         for j in range (LenList-i-1):
@@ -9,12 +20,12 @@ def BubbleSort (Lista):
                 Aux = Lista[j]
                 Lista[j] = Lista[j+1]
                 Lista[j+1] = Aux
-    y = int(time.strftime("%M"))
+    y = int(time.strftime("%S"))
     print (y - x)
-    return imprimir(Lista)
+    ##print (Lista)
 
 def SelectionSort (Lista):
-    x = int(time.strftime("%M"))
+    x = int(time.strftime("%S"))
     LenList = len(Lista)
     for i in range (LenList):
         temp = i
@@ -24,11 +35,8 @@ def SelectionSort (Lista):
         Aux = Lista[i]
         Lista[i] = Lista[temp]
         Lista[temp] = Aux
-    y = int(time.strftime("%M"))
+    y = int(time.strftime("%S"))
     print (y - x)
-    return imprimir(Lista)
-            
-def imprimir (Lista):
-    LenList = len(Lista)
-    for i in range (LenList):
-        print (Lista[i])
+    ##print (Lista)
+
+OdeN ()
