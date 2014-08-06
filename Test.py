@@ -1,10 +1,13 @@
 import time
+import random
+
+## random.randint(0, 10000)
 
 def OdeN ():
     i = 0
     Lista = []
-    while i<10000:
-        Lista = Lista + [i]
+    while i<50000:
+        Lista = Lista + [50000-i]
         i = i + 1
     BubbleSort (Lista)
     SelectionSort (Lista)
@@ -12,7 +15,8 @@ def OdeN ():
         
 
 def BubbleSort (Lista):
-    x = int(time.strftime("%S"))
+    print("Minutos inicial: " + time.strftime("%M"))
+    print("Segundo Inicial: " + time.strftime("%S"))
     LenList = len(Lista)
     for i in range (LenList):
         for j in range (LenList-i-1):
@@ -20,12 +24,13 @@ def BubbleSort (Lista):
                 Aux = Lista[j]
                 Lista[j] = Lista[j+1]
                 Lista[j+1] = Aux
-    y = int(time.strftime("%S"))
-    print (y - x)
+    print("Minutos Final: " + time.strftime("%M"))
+    print("Segundo Final: " + time.strftime("%S"))
     ##print (Lista)
 
 def SelectionSort (Lista):
-    x = int(time.strftime("%S"))
+    print("Minutos inicial: " + time.strftime("%M"))
+    print("Segundo Inicial: " + time.strftime("%S"))
     LenList = len(Lista)
     for i in range (LenList):
         temp = i
@@ -35,8 +40,8 @@ def SelectionSort (Lista):
         Aux = Lista[i]
         Lista[i] = Lista[temp]
         Lista[temp] = Aux
-    y = int(time.strftime("%S"))
-    print (y - x)
+    print("Minutos Final: " + time.strftime("%M"))
+    print("Segundo Final: " + time.strftime("%S"))
     ##print (Lista)
 
 OdeN ()

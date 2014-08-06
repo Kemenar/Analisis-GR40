@@ -1,0 +1,83 @@
+# Tarea #1 de Análisis de algoritmos
+
+##Introducción y Métodos:
+En el presente informe pretende investigar la eficiencia en los algoritmos de búsqueda del BubbleSort y SelectionSort. La investigación pretende comparar los tiempos de ejecución y bajo que parámetros estos resultan ser más eficaz. Para ello se empleara el lenguaje programación Python, el cual se programarán los algoritmos y se medirán los tiempos con respecto el reloj del Sistema Operativo. Debido a problemas con la computadora que se desarrollo el experimento, se decidió tomar otros parámetros que consta desde los 10000 elementos hasta los 50000
+
+- - -
+
+##Hipótesis:
+Según lo planteado en los sitios web [Wikipedia ordenamiento de burbuja](http://es.wikipedia.org/wiki/Ordenamiento_de_burbuja) y en [Wikipedia Ordenamiento por selección](http://es.wikipedia.org/wiki/Ordenamiento_por_selecci%C3%B3n) se pudo llegar a las siguientes suposiciones:
+
+ 1. El ordenamiento de Burbuja es el más deficiente
+
+ 2. El tiempo de ejecución del algoritmo de Burbuja, dependerá de en la posición en la que se encuentren los valores con  mayor denominación, sea el cazo que se necesite acoplar los valores de menor a mayor.
+
+ 3. El tiempo de ejecución del algoritmo de Selección, dependerá que tan desordenada se encuentre la lista
+
+ 4. El crecimiento de ambas funciones va de forma exponencial, puesto que para ambas pertenecen a O(n^2)
+
+- - -
+
+## Resultados:
+
+Los resultados se dan de la siguiente manera:
+
+  - La A significa que la lista de valores se tomo de manera ascendente
+
+  - La R significa que los valores fueron tomados de manera aleatoria
+
+  - La D significa que los valores tomados iban de manera decendente 
+
+ 1.Bubble - Selection  con 10000 Elementos
+ 
+A. 10..........7 sec
+
+R. 19..........9 sec
+
+D. 29..........9 sec
+
+
+ Bubble - Selection  con 20000 Elementos
+ 
+A. 42..........32 sec
+
+R. 90..........44 sec
+
+D. 111........32 sec
+
+
+ Bubble - Selection  con 30000 Elementos
+ 
+A. 97.........71 sec
+
+R. 191.......86 sec
+
+D. 255.......70 sec
+
+
+ Bubble - Selection  con 40000 Elementos
+ 
+A. 168.......127 sec
+
+R. 328.......170 sec
+
+D. 470.......127 sec
+
+
+ Bubble - Selection  con 50000 Elementos
+ 
+A.  283.......199 sec
+
+R.  522.......388 sec
+
+D.  725.......218 sec
+
+- - -
+
+##Discusión y Conclusión:
+
+Según los resultados obtenidos se puede concluir que para ambos, que los tiempos crecerán de manera exponencial dependiendo de la cantidad de valores. Por otra parte se ratifica que en el ordenamiento Bubblesort, los tiempos aumentan dependiendo de la posición en la que se encuentre el número mayor. También, el tiempo de ejecución en el SelectionSort dependerá que tan ordenada se encuentre la lista.
+
+- - -
+
+Para efectos de una mejor visualización del presente documento puede ingresar a la siguiente página [Documento en MakDown](http://bit.ly/1pBHDOr)
